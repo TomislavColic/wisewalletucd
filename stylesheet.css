@@ -1,0 +1,305 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.logo{
+    margin-right: auto;
+}
+.logo img{
+    width: 150px;
+    height: 100px;
+}
+
+header{
+    max-height: 100px;
+    display: flex;
+    justify-content: center;
+    background-color: #2AAE9A;
+    color: #ffff;
+    font-weight: 700;
+}
+.nav_wrapper{
+    margin-right: auto;
+    margin-top: 3.5rem;
+}
+nav ul{
+    display: flex;
+}
+nav ul li{
+    list-style: none;
+    font-size: larger;
+    padding: 0.5rem;
+}
+nav ul li a{
+    color: #ffff;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+nav ul li a:hover{
+    text-decoration: underline;
+    transition: width ease-in 2s;
+}
+.avatar_wrapper{
+    display: flex;
+    flex-direction: column;
+    margin-right: 1rem;
+    margin-top: 1rem;
+}
+.avatar{
+    height: 50px;
+    width: 50px;
+    background-color: #1F2639;
+    border-radius: 50%;
+}
+footer{
+    position: sticky;
+    background-color:#2AAE9A;
+    height: 200px;
+    width: 100%;
+    margin-top: 30%;
+    color: #ffff;
+    text-transform: uppercase;
+    font-weight: 900;
+    text-align: center;
+}
+/*
+this part is for home page
+*/
+.image-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.image-container img {
+    width: 100%;
+    max-width: 400px; /* You can adjust the maximum width if needed */
+    margin-bottom: 20px;
+}
+.section {
+    margin-bottom: 50px;
+}
+
+.section-content {
+    max-width: 800px;
+    margin: 0 auto;
+    margin-top: 5%;
+}
+
+.section h1 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.section p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-top: 5%;
+}
+/*
+    THIS PART IS FOR ABOUT PAGE
+*/
+.about_h1{
+    padding: 1.5em;
+    margin-left: 5%;
+}
+.about_h3{
+    padding-bottom: 1em;
+    margin-left: 1%;
+}
+/*
+    THIS PART IS FOR WALLET
+*/
+.grid_wrapper{
+    border: 1px solid black;
+}
+.intro_wallet{
+    display: flex;
+    flex-direction: column;
+}
+.intro_wallet h1{
+    padding: 2rem;
+    text-align: center;
+}
+.intro_wallet p{
+    padding: 0.5rem;
+    text-align: left;
+}
+main{
+    min-height: 100vmin;
+}
+.income_wrapper{
+    margin-left: 30%;
+    width: 35%;
+    position: relative;
+    border: 1px solid #1F2639;
+    background-color: #52545a;
+    box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.3);
+    text-align: center;
+}
+.budget_h1{
+    text-align: center;
+    color: #ffff;
+    border: 1px solid #1F2639;
+    padding: 0.3rem;
+}
+
+.income_form{
+    border: 1px solid black;
+    box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 4%;
+    width: 100%;
+    padding: 1rem;
+}
+.income_form label, .income_form input{
+    width: 100%;
+    padding: 5px;
+}
+.append_class_item{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 4%;
+    width: 100%;
+    padding: 1rem;
+}
+.btn_budget_add, .btn_budget_save{
+    background-color: #2AAE9A;
+    color: #ffff;
+    padding: 0.3rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    cursor: pointer;
+}
+.btn_budget_save{
+    background-color: #1F2639;
+}
+#budget_list{
+    font-size: larger;
+    margin-top: 3%;
+    margin-left: 5%;
+}
+
+/*
+    THIS PART IS FOR PROFILE PAGE
+*/
+#user_logo{
+    text-align: center;
+    padding: 2%;
+    background-color: #1F2639;
+    color: #ffff;
+}
+.user_intro_info{
+    margin-left: 4%;
+    margin-top: 1em;
+    padding: 1em;
+}
+.after_user_info_wrapper_class{
+    padding: 1em;
+    font-size: larger;
+}
+.after_user_info_wrapper_class h2{
+    text-align: center;
+    padding: 5%;
+}
+.after_user_info_wrapper_class li, .after_user_info_wrapper_class p{
+    list-style: none;
+    padding: 0.5rem;
+}
+.user_intro_info_list{
+    margin-left: 5%;
+    padding: 1em;
+    font-size: 1.1rem;
+}
+.edit_profile{
+    display: grid;
+    grid-row: 1;
+    grid-column: 2;
+    margin-top: 5%;
+}
+.user_picture_wrapper{
+    grid-column-start: 2;
+}
+.user_picture{
+    width: 200px;
+    height: 200px;
+    background-color: #1F2639;
+    color: #ffff;
+    margin-bottom: 1rem;
+}
+.profile_form{
+     display: flex;
+     flex-direction: column;
+     margin-left: 20%;
+     width: 500px;
+     border: solid 1px #1F2639;
+     padding: 1rem;
+     box-shadow: 3px 3px  #757880;
+}
+.profile_form label, .profile_form input{
+    padding: 0.7em;
+}
+.user_data{
+    margin-top: -19%;
+    padding: 2em;
+    margin-left: 6%;
+    font-size: large;
+}
+.user_data p, .user_data h2{
+    padding: 1rem;
+}
+.show{
+    display: block;
+}
+.hide{
+    display: none;
+}
+/*
+    THIS PART IS FOR CONTACT PAGE
+*/
+
+.contact_h1{
+    margin-left: 2em;
+    padding: 1em;
+}
+.contact_p{
+    margin-left: 8em;
+    font-weight: bold;
+}
+.contact_form{
+    display: flex;
+    flex-direction: column;
+    max-width: 40%;
+    margin-left: 30%;
+    padding: 1rem;
+}
+.contact_form input{
+    padding: 0.7rem;
+}
+.contact_form label{
+    padding: 1rem;
+    font-weight: 600;
+}
+textarea{
+    font-size: 1em;
+
+}
+.btn_contact, .btn_contact_reset{
+    margin-top: 5px;
+    padding: 0.5rem;
+    background-color: #1F2639;
+    color: #ffff;
+    font-weight: 900;
+    cursor: pointer;
+}
+/* specific class */
+.remove_item{
+    background-color: red;
+    color: #ffff;
+    border-radius: 5%;
+}

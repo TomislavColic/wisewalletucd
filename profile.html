@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="stylesheet.css">
+        
+    </head>
+    <body>
+        <header>
+            <div class="logo">
+                <img src="img/logo.jpg" alt="picture of wallet">
+            </div>
+            <nav id="nav_vrapper" class="nav_wrapper">
+                <ul>
+                    <li><a href="index.html">home</a></li>
+                    <li><a href="about.html">about</a></li>
+                    <li><a href="wallet.html">wallet</a></li>
+                    <li><a href="profile.html">profile</a></li>
+                    <li><a href="contact.html">contact</a></li>
+                </ul>
+            </nav>
+            <div class="avatar_wrapper">
+                <div class="avatar"></div>
+                <div class="profile">User Name</div>
+            </div>
+        </header>
+        <main>
+            <h1 class="profile" id="user_logo">Create your profile</h1>
+            <div class="after_edit_profile_wrapper"></div>
+            <div class="edit_profile_wrapper" id="profile_wrapper">
+                <h3 class = "user_intro_info">Create a Profile to Unlock Exclusive Benefits:</h3>
+                <ul class="user_intro_info_list">
+                    <li>Personalize Your Experience</li>
+                    <li>Access Premium Content</li>
+                    <li>Receive Special Offers and Discounts</li>
+                    <li>Stay Updated with the Latest News</li>
+                </ul>
+                <p class="user_intro_info_list">Join our community today and make the most of your visit. It only takes a few moments to create your profile. Let's get started!</p>
+            </div>
+                <section class="edit_profile">
+                    <form action="" class="profile_form" id="profile_form" method="post" >
+                    <label for="username">User name</label>
+                    <input type="text" name="username" id="user_name" required>
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="user_email" required>
+                    <label for="age">Age</label>
+                    <input type="text" name="age" id="user_age" required>   
+                    <label for="occupation">Occupation</label>
+                    <input type="text" name="occupation" id="user_occupation">
+                    <label for="employed_status">Employed status</label>
+                    <select name="employedStatus" id="employed_status">
+                        <option value="employed">Employed</option>
+                        <option value="not employed">Not employed</option>
+                        <option value="other">Other</option>
+                    </select>
+                    <label for="monthly_income">Monthly income</label>
+                    <select name="monthlyIncome" id="monthly_income">
+                        <option value="2000">2000</option>
+                        <option value="2000-4000">2000 - 3000</option>
+                        <option value="3000-4000">3000 - 4000</option>
+                        <option value="4000-5000">4000 - 5000</option>
+                        <option value="5000-6000">5000 - 6000</option>
+                        <option value="6000+">6000+</option>
+                    </select>
+                    <label for="kids">Kids</label>
+                    <select name="kids" id="num_kids">
+                        <option value="0">0</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4+">4+</option>
+                    </select>
+                    <label for="marriage_status">Marriage status</label>
+                    <select name="marriageStatus" id="marriage_status">
+                        <option value="married">Married</option>
+                        <option value="single">Single</option>
+                    </select>
+                    <label for="dateOfBirth">Date of Birth</label>
+                    <input type="date" name="dateOfBirth" id="date_Of_Birth">
+                    <button type="submit"class="btn_contact" id="submit">Save</button>
+                </form>
+                <div class="user_picture_wrapper">
+                    <div class="user_picture"><img src="#" alt="user picture"></div>
+                    <input type="file" name="user_picture" id="user_picture">
+                </div>
+                
+            </section>
+            <section class="user_data hide" id="user_data">
+                <h2 class="profile">Profile page</h2>
+                <p id="display_user_name">User name</p>
+                <p id="display_email">Emmail</p>
+                <p id="display_age">Age</p>
+                <p id="display_occupation">Occupation</p>
+                <p id="display_employed_status">Employed status</p>
+                <p id="display_monthly_income">Monthly income</p>
+                <p id="display_number_of_kids">Number of kids</p>
+                <p id="display_marriage_status">Marriage status</p>
+                <p id="display_date_of_birth">Date of birth</p>
+                <button id="edit_profile" class="btn_contact">Edit Profile</button>
+            </section>
+        </main>
+        <footer>
+            <div class="logo">
+                <img src="img/logo.jpg" alt="picture of wallet">
+            </div>
+            <div>&copy;tommy</div>
+        </footer>
+        <script src="profile.js"></script>
+    </body>
+</html>

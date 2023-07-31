@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="stylesheet.css">
+    </head>
+    <body>
+        <header>
+            <div class="logo">
+                <img src="img/logo.jpg" alt="picture of wallet">
+            </div>
+            <nav id="nav_vrapper" class="nav_wrapper">
+                <ul>
+                    <li><a href="index.html">home</a></li>
+                    <li><a href="about.html">about</a></li>
+                    <li><a href="wallet.html">wallet</a></li>
+                    <li><a href="profile.html">profile</a></li>
+                    <li><a href="contact.html">contact</a></li>
+                </ul>
+            </nav>
+            <div class="avatar_wrapper">
+                <div class="avatar"></div>
+                <div class="profile">User Name</div>
+            </div>
+        </header>
+        <main>
+            <div class="intro_wallet">
+                <h1>Budget Management</h1>
+                <p>
+                    Use the form below to manage your budget. Enter your primary employment income,
+                    secondary employment or side hustle income, investment income, government benefits or assistance,
+                    and passive income. Additionally, you can add other sources of income in the "Add Additional Income" section.
+                </p>
+                <p>
+                    Keep track of your expenses by entering the amounts you spend on various categories such as rent, groceries,
+                    utilities, entertainment, and more. Stay on top of your budget and make informed financial decisions!
+                </p>
+            </div>        
+                <div class="income_wrapper">
+                    <h1 class="budget_h1">Income</h1>
+                    <form action="" class="income_form" id="income_form">
+                        <div id="budget_wrapper">
+                            <label for="primaryEmploymentIncome">Primary Employment Income:
+                                <input type="text" name="primaryEmploymentIncome">
+                            </label>
+                            <label for="secondaryEmploymentOrSideHustle">Secondary Employment or Side Hustle:
+                                <input type="text" name="secondaryEmploymentOrSideHustle" id="secondary">
+                            </label>
+                            <label for="investmentIncome">Investment Income:
+                                <input type="text" name="investmentIncome" id="investment">
+                            </label>
+                            <label for="governmentBenefitsOrAssistance">Government Benefits or Assistance:
+                                <input type="text" name="governmentBenefitsOrAssistance" id="benefits">
+                            </label>
+                            <label for="passiveIncome">Passive Income:
+                                <input type="text" name="passiveIncome" id="passive">
+                            </label>
+                        </div>    
+                        <hr>
+                        <label for="">Add new Exspense</label>
+                        <input type="text" id="budget_add_name">
+                        <button type="button" class="btn_budget_add" id="btn_budget_add">Add Exspense</button>
+                        <button type="submit" class="btn_budget_save" id="btn_budget">Save</button>
+                    </form>
+                </div>
+                <ul id="budget_list"></ul>
+        </main>
+        <footer>
+            <div class="logo">
+                <img src="img/logo.jpg" alt="picture of wallet">
+            </div>
+            <div>&copy;tommy</div>
+        </footer>
+        <script src="main.js"></script>
+        <script src="wallet.js"></script>
+    </body>
+</html>
